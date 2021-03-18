@@ -11,6 +11,7 @@ import java.util.Scanner;
 public class SortMain {
     public static void main(String[] args){
 /*建立非固定数组*/
+//        int[] nums= {20,14,18};
         Scanner scanner =new Scanner(System.in);
         String str=scanner.nextLine();
         String[] strarrys=str.split(" ");
