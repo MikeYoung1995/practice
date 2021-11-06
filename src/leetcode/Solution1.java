@@ -20,6 +20,8 @@ public class Solution1 {
 
 
     public static int[] twoSum(int[] nums, int target) {
+        /*暴力破解*/
+
 //        HashMap<Integer,Integer> map = new HashMap<>();
 //        for(int i = 0; i < nums.length; i++){
 //            if(map.containsKey(nums[i])){
@@ -36,10 +38,12 @@ public class Solution1 {
             if(hash.containsKey(nums[i])){
                 indexs[0] = i;
                 indexs[1] = hash.get(nums[i]);
+                System.out.println(indexs[1]);
                 return indexs;
             }
             // 将数据存入 key为补数 ，value为下标
             hash.put(target-nums[i],i);
+//            hash.put(i,target-nums[i]);
         }
         return indexs;
     }
